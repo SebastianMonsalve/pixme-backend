@@ -1,0 +1,28 @@
+{
+  "name": "mongoapi---gallery",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "dev": "nodemon server/index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bcrypt": "^5.1.1",
+    "cloudinary": "^1.41.0",
+    "cors": "^2.8.5",
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2",
+    "express-fileupload": "^1.4.1",
+    "fs-extra": "^11.1.1",
+    "mongoose": "^7.6.3",
+    "nodemailer": "^6.9.7",
+    "random-string-alphanumeric-generator": "^0.12.2"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.1"
+  }
+}
