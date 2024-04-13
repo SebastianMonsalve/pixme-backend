@@ -59,7 +59,7 @@ export const getAuthUser = async (req, res) => {
     console.log("Hola")
     const user = await User.find({ _id: req.params.id }).populate("images").exec();
     console.log(user)
-    if (userFound.length === 0) return res.send("Not found");
+    if (user.length === 0) return res.send("Not found");
     return res.send(user);
   } catch (error) {
     console.log(error);
