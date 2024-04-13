@@ -7,6 +7,7 @@ import {
   getUsers,
   getUserRecovery,
   RecoveryPassword,
+  getAuthUser,
 } from "../controllers/user.controller.js";
 
 const router = Router();
@@ -18,5 +19,6 @@ router.put("/:id", updateUser);
 router.delete("/:id", deleteUser);
 router.post("/recoveryemail", getUserRecovery);
 router.put("/recoverypassword/:id", RecoveryPassword);
+router.get("/:id", getAuthUser);
 
 export default router;
